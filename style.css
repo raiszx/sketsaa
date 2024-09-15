@@ -1,0 +1,204 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+::-webkit-color-swatch,
+::-moz-color-swatch {
+  border-color: transparent;
+}
+
+:root {
+  --clr-900: #4f0e0e;
+  --clr-700: #593f3f;
+  --clr-500: #b50000;
+  --clr-100: #eeeeee;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--clr-900);
+  color: var(--clr-100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.pixel {
+  flex: 1;
+  background-color: var(--clr-100);
+  border: 1px lightgrey solid;
+}
+
+.colorInput {
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 5px #f20505;
+  border: none;
+}
+
+.fa-solid {
+  font-size: 2.5em;
+  color: var(--clr-700);
+}
+
+.logo {
+  max-width: 90000px;
+  margin-bottom: 1em;
+}
+
+.drawingArea {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.roundBtn {
+  border: none;
+  background-color: var(--clr-500);
+  padding: 1em;
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  box-shadow: 0 5px #000000;
+}
+
+.roundBtn:hover,
+.roundBtn:focus {
+  opacity: 0.5;
+}
+
+.sqrBtn {
+  border: none;
+  background-color: var(--clr-700);
+  color: var(--clr-500);
+  padding: 0.5em 1.5em;
+  border-radius: 0.5em;
+  box-shadow: 0 5px #000000;
+}
+.sqrBtn:hover {
+  opacity: 0.5;
+}
+
+.upper-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.5em;
+}
+
+.bottom-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+
+.content-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  box-shadow: 0 5px #1b1b1b;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+}
+
+footer {
+  position: absolute;
+  font-size: clamp(0.8em, 0.5vw, 1em);
+  bottom: 10px;
+}
+
+@media screen and (max-width: 680px) {
+  .content {
+    flex-direction: column-reverse;
+  }
+
+  .buttons-container {
+    flex-direction: column;
+  }
+
+  .upper-btn {
+    flex-direction: row;
+  }
+
+  .bottom-btn {
+    flex-direction: row;
+  }
+
+  .container {
+    width: 400px;
+    height: 400px;
+  }
+
+  .upper-btn,
+  .bottom-btn {
+    gap: 1em;
+  }
+
+  .buttons-container {
+    gap: 1em;
+  }
+  .colorInput {
+    width: 50px;
+    height: 50px;
+  }
+  .fa-solid {
+    font-size: 1.5em;
+  }
+
+  .roundBtn {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .container {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 336px) {
+  .container {
+    width: 250px;
+    height: 250px;
+  }
+}

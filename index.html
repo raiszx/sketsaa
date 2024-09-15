@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title> Menggambar Sketsa || RaidZyo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d4c70ebaf1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="content-container">
+        <div class="logo">
+          <img src="Removal-144.png" alt="Menggambar Sketsa" />
+        </div>
+
+        <div class="content">
+          <div class="buttons-container">
+            <div class="upper-btn">
+              <input
+                type="color"
+                value="#00adb5"
+                id="colorInput"
+                class="colorInput"
+              />
+              <button class="paintBtn roundBtn" id="paintBtn">
+                <i class="fa-solid fa-brush"></i>
+              </button>
+              <button class="eraseBtn roundBtn" id="eraseBtn">
+                <i class="fa-solid fa-eraser"></i>
+              </button>
+              <button class="randomBtn roundBtn" id="randomBtn">
+                <i class="fa-solid fa-dice"></i>
+              </button>
+            </div>
+            <div class="bottom-btn">
+              <button class="new-cnvs-btn sqrBtn" id="new-cnvs-btn">New</button>
+              <button id="resetBtn" class="sqrBtn">Reset</button>
+            </div>
+          </div>
+
+          <div class="drawingArea">
+            <div class="container" id="container"></div>
+            <p class="gridSize" id="gridSize">64 x 64</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p class="copyright">© RaidZyo</p>
+    </footer>
+  </body>
+</html>
